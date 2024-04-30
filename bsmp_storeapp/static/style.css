@@ -1,0 +1,42 @@
+/* Global styling for the website. 
+Bootstrap classes are recommended for styling whenever possible. If a specific styling cannot be achieved using Bootstrap, you can customize it here. */
+
+/* # Navigation Bar 
+================================================== */
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar{
+    background-color: #d0c2b1; 
+   box-shadow: 0 0 4px rgba(0,0,0,.1);
+   padding: 5px 16px;
+}
+
+/* Nav hover white bar */
+.nav-item:after {
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    height: 2px;
+    content: '';
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 100ms linear;
+}
+
+.nav-item:hover:after {
+    width: 100%; 
+    opacity: 1;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
