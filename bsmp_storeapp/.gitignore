@@ -173,4 +173,4 @@ connect.py
 # specific to MAC users, otherwise this file shows up in the repositiory.
 .DS_Store 
 
-.venv/
+/.venv
