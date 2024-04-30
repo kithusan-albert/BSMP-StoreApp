@@ -174,3 +174,4 @@ connect.py
 .DS_Store 
 
 /.venv
+venv/
